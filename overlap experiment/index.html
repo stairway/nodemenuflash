@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<title>Node Menu</title>
+	
+	<style type="text/css">
+		.flashContent {
+			width: 1000px;
+			height: 800px;
+			
+			border: dotted 1px red;
+		}
+	</style>
+	
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript">
+	  // Load jquery
+	  google.load("jquery", "1.4.1");
+	  // Load jQuery UI
+	  google.load("jqueryui", "1.7.2");
+	  // Load swfobject
+	  google.load("swfobject", "2");
+	</script>
+	
+	<script type="text/javascript">		
+		var flashvars = {};
+		var params = {};
+		params.menu = "false";
+		params.quality = "autohigh";
+		params.wmode = "transparent";
+		params.allowfullscreen = "false";
+		params.allowscriptaccess = "always";
+		params.base = "";
+		var attributes = {};
+		attributes.name = "node_menu";
+		attributes.styleclass = "flashContent";
+		swfobject.embedSWF("NodeMenu.swf", "altFlashContent", "100%", "100%", "10.0.0", false, flashvars, params, attributes);
+	</script>
+
+</head>
+<body>
+	<div id="altFlashContent" style="width: 500px; text-align: center;">
+		<a href="http://www.adobe.com/go/getflashplayer">
+			<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+		</a>
+	</div>
+</body>
+</html>
